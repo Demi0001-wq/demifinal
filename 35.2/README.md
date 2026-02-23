@@ -1,0 +1,1 @@
+# LMS Project\n\nPristine resurrection complete. This repository is clean and functional.
