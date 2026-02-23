@@ -162,7 +162,6 @@ MEDIA_ROOT = BASE_DIR / 'media'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Stripe API Settings
-# Stripe API Settings
 STRIPE_API_KEY = os.getenv('STRIPE_API_KEY')
 
 # Celery Settings
