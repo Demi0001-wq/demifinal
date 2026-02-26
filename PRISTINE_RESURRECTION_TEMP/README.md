@@ -39,7 +39,7 @@ This project is a Learning Management System (LMS) built with Django REST Framew
 ## Deployment
 
 ### Server Setup
-11. **Prepare the server**:
+1. **Prepare the server**:
    - Install Docker and Docker Compose.
    - Set up SSH access for GitHub Actions.
 
