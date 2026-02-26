@@ -1,11 +1,15 @@
 from django.urls import path
-from users.apps import UsersConfig
-from users.views import UserLoginView, UserLogoutView, RegisterView
-
-app_name = UsersConfig.name
-
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from .views import *
 urlpatterns = [
-    path('login/', UserLoginView.as_view(), name='login'),
-    path('logout/', UserLogoutView.as_view(), name='logout'),
-    path('register/', RegisterView.as_view(), name='register'),
+    path('register/', UserCreateAPIView.as_view(), name='user-register'),
+    path('login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('', UserListAPIView.as_view(), name='user-list'),
+    path('<int:pk>/', UserRetrieveAPIView.as_view(), name='user-detail'),
+    path('update/<int:pk>/', UserUpdateAPIView.as_view(), name='user-update'),
+    path('delete/<int:pk>/', UserDestroyAPIView.as_view(), name='user-delete'),
+    path('payments/', PaymentListAPIView.as_view(), name='payment-list'),
+    path('payments/create/', PaymentCreateAPIView.as_view(), name='payment-create'),
+    path('payments/status/<int:pk>/', PaymentStatusAPIView.as_view(), name='payment-status'),
 ]

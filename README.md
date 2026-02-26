@@ -1,31 +1,60 @@
-# Catalog Store - Django Project
+# LMS Project (Django REST Framework)
 
-This is a professional Django-based web application for an online product catalog.
+This project is a Learning Management System (LMS) built with Django REST Framework, containerized with Docker, and automated with GitHub Actions.
 
-## Project Structure
-- `catalog/` - The web application for products and categories.
-- `config/` - The core project settings and URL configuration.
-- `manage.py` - Django's command-line utility for administrative tasks.
-- `requirements.txt` - Project dependencies.
+## Features
+- Django REST Framework: Core API.
+- PostgreSQL: Primary database.
+- Redis & Celery: Background task processing (e.g., deactivating inactive users).
+- Nginx: Reverse proxy for serving static and media files.
+- GitHub Actions: Automated testing, linting, and deployment.
 
-## Installation and Setup
-1. Create a virtual environment and activate it.
-2. Install dependencies:
+## Local Setup
+
+### Prerequisites
+- Docker and Docker Compose installed.
+
+### Steps
+1. Clone the repository:
    ```bash
-   pip install -r requirements.txt
-   ```
-3. Set up your `.env` file for database configuration (refer to `.env.sample`).
-4. Run migrations:
-   ```bash
-   python manage.py migrate
-   ```
-5. (Optional) Populate the database with initial data:
-   ```bash
-   python manage.py fill
-   ```
-6. Start the development server:
-   ```bash
-   python manage.py runserver
+   git clone https://github.com/Demi0001-wq/docker.git
+   cd docker
    ```
 
-Visit the application at `http://127.0.0.1:8000/`
+2. Configure environment variables:
+   - Copy `env.sample` to `.env`.
+   - Update the values in `.env` (especially `SECRET_KEY` and `STRIPE_API_KEY`).
+
+3. Run the project:
+   ```bash
+   docker compose up -d --build
+   ```
+   The application will be available at `http://localhost`.
+
+4. Run tests:
+   ```bash
+   docker compose exec backend pytest
+   ```
+
+## Deployment
+
+### Server Setup
+1. Prepare the server:
+   - Install Docker and Docker Compose.
+   - Set up SSH access for GitHub Actions.
+
+2. GitHub Secrets:
+   - Add the following secrets to your GitHub repository (`Settings > Secrets and variables > Actions`):
+     - `SSH_HOST`: Your server's IP address.
+     - `SSH_USER`: SSH username (e.g., `root` or `ubuntu`).
+     - `SSH_KEY`: Your SSH private key.
+
+3. Automatic Deployment:
+   - Every push to the `main` branch will trigger the CI/CD pipeline:
+     - Lint: Checks code style with `flake8`.
+     - Test: Runs `pytest`.
+     - Build: Verifies Docker images can be built.
+     - Deploy: Automatically pulls changes and restarts containers on the server.
+
+## Server Address
+- Live App: [http://your-server-ip](http://your-server-ip) (Please replace with your actual server IP once deployed).
