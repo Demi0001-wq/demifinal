@@ -5,8 +5,12 @@ from users.models import User
 
 class MaterialsTestCase(TestCase):
     def setUp(self):
-        self.user = User.objects.create(email="test@example.com")
-        self.course = Course.objects.create(name="Test Course", description="Test Description", owner=self.user)
+        self.user = User.objects.create(email="test_mat@example.com")
+        self.course = Course.objects.create(
+            name="Test Course",
+            description="Test Description",
+            owner=self.user
+        )
         self.lesson = Lesson.objects.create(
             name="Test Lesson",
             description="Test Description",
