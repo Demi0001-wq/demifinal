@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Blog(models.Model):
     title = models.CharField(max_length=200, verbose_name='Заголовок')
     slug = models.CharField(max_length=200, verbose_name='slug', null=True, blank=True)
