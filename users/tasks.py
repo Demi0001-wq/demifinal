@@ -2,6 +2,8 @@ from celery import shared_task
 from django.utils import timezone
 from datetime import timedelta
 from .models import User
+
+
 @shared_task
 def deactivate_inactive_users():
     threshold_date = timezone.now() - timedelta(days=30)

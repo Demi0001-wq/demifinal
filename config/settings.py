@@ -1,6 +1,6 @@
 import os
-import sys
 from pathlib import Path
+from celery.schedules import crontab
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-+o!nzdk_d84kh8z^9#27i_$j^28xp@_w3ok1p0^1stmj*sn2iy')
@@ -81,7 +81,6 @@ STRIPE_API_KEY = os.getenv('STRIPE_API_KEY')
 CELERY_BROKER_URL = os.getenv('CELERY_BROKER_URL', 'redis://localhost:6379/0')
 CELERY_RESULT_BACKEND = os.getenv('CELERY_RESULT_BACKEND', 'redis://localhost:6379/0')
 
-from celery.schedules import crontab
 CELERY_BEAT_SCHEDULE = {
     'deactivate_inactive_users_daily': {
         'task': 'users.tasks.deactivate_inactive_users',

@@ -2,6 +2,7 @@ from django.core.cache import cache
 from catalog.models import Product
 from config.settings import CACHE_ENABLED
 
+
 def get_products_by_category(category_pk):
     """
     Returns a list of published products for a specific category.

@@ -20,4 +20,5 @@ class Command(BaseCommand):
             perm = Permission.objects.get(codename=perm_code, content_type=content_type)
             group.permissions.add(perm)
 
-        self.stdout.write(self.style.SUCCESS(f'Group "Product Moderator" created and configured with permissions: {", ".join(perms)}'))
+        success_msg = f'Group "Product Moderator" created and configured with permissions: {", ".join(perms)}'
+        self.stdout.write(self.style.SUCCESS(success_msg))

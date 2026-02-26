@@ -2,7 +2,12 @@ from rest_framework import generics
 from rest_framework.permissions import AllowAny
 from .models import User, Payment
 from .serializers import UserRegisterSerializer, UserSerializer, PaymentSerializer
-from .services import create_stripe_product, create_stripe_price, create_stripe_session, retrieve_stripe_session
+from .services import (
+    create_stripe_product,
+    create_stripe_price,
+    create_stripe_session,
+    retrieve_stripe_session
+)
 
 
 class UserCreateAPIView(generics.CreateAPIView):
@@ -40,7 +45,13 @@ class PaymentCreateAPIView(generics.CreateAPIView):
 
     def perform_create(self, serializer):
         payment = serializer.save(user=self.request.user)
-        product_name = payment.paid_course.name if payment.paid_course else payment.paid_lesson.name if payment.paid_lesson else "Generic Payment"
+        if payment.paid_course:
+            product_name = payment.paid_course.name
+        elif payment.paid_lesson:
+            product_name = payment.paid_lesson.name
+        else:
+            product_name = "Generic Payment"
+
         product_id = create_stripe_product(product_name)
         price_id = create_stripe_price(payment.payment_amount, product_id)
         session_id, payment_link = create_stripe_session(price_id)
