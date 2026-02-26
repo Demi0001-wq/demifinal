@@ -2,6 +2,7 @@ import json
 from django.core.management.base import BaseCommand
 from catalog.models import Category, Product
 
+
 class Command(BaseCommand):
     help = 'Fill database with test data'
 

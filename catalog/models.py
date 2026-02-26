@@ -1,6 +1,7 @@
 from django.db import models
 from config import settings
 
+
 class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name='Наименование')
     description = models.TextField(verbose_name='Описание', blank=True, null=True)
@@ -11,6 +12,7 @@ class Category(models.Model):
     class Meta:
         verbose_name = 'Категория'
         verbose_name_plural = 'Категории'
+
 
 
 class Product(models.Model):
@@ -34,6 +36,7 @@ class Product(models.Model):
         permissions = [
             ('can_unpublish_product', 'Can unpublish product'),
         ]
+
 
 
 class Contact(models.Model):

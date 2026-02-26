@@ -7,6 +7,7 @@ from .serializers import *
 from .permissions import IsModerator, IsOwner
 from .paginators import MaterialsPagination
 from .tasks import send_course_update_email
+
 class CourseViewSet(viewsets.ModelViewSet):
     queryset = Course.objects.all()
     serializer_class = CourseSerializer
@@ -20,27 +21,33 @@ class CourseViewSet(viewsets.ModelViewSet):
         elif self.action in ['update', 'partial_update', 'list', 'retrieve']: self.permission_classes = [IsAuthenticated, IsModerator | IsOwner]
         elif self.action == 'destroy': self.permission_classes = [IsAuthenticated, IsOwner]
         return [p() for p in self.permission_classes]
+
 class LessonCreateAPIView(generics.CreateAPIView):
     serializer_class = LessonSerializer
     permission_classes = [IsAuthenticated, ~IsModerator]
     def perform_create(self, serializer): serializer.save(owner=self.request.user)
+
 class LessonListAPIView(generics.ListAPIView):
     queryset = Lesson.objects.all()
     serializer_class = LessonSerializer
     permission_classes = [IsAuthenticated, IsModerator | IsOwner]
     pagination_class = MaterialsPagination
+
 class LessonRetrieveAPIView(generics.RetrieveAPIView):
     queryset = Lesson.objects.all()
     serializer_class = LessonSerializer
     permission_classes = [IsAuthenticated, IsModerator | IsOwner]
+
 class LessonUpdateAPIView(generics.UpdateAPIView):
     queryset = Lesson.objects.all()
     serializer_class = LessonSerializer
     permission_classes = [IsAuthenticated, IsModerator | IsOwner]
+
 class LessonDestroyAPIView(generics.DestroyAPIView):
     queryset = Lesson.objects.all()
     serializer_class = LessonSerializer
     permission_classes = [IsAuthenticated, IsOwner]
+
 class SubscriptionAPIView(APIView):
     permission_classes = [IsAuthenticated]
     def post(self, *args, **kwargs):

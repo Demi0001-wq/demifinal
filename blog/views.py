@@ -3,6 +3,7 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from blog.models import Blog
 
 
+
 class BlogListView(ListView):
     model = Blog
     template_name = 'blog/blog_list.html'
@@ -10,6 +11,7 @@ class BlogListView(ListView):
 
     def get_queryset(self):
         return Blog.objects.filter(is_published=True)
+
 
 
 class BlogDetailView(DetailView):
@@ -23,11 +25,13 @@ class BlogDetailView(DetailView):
         self.object.save()
         return self.object
 
+
 class BlogCreateView(CreateView):
     model = Blog
     fields = ('title', 'content', 'preview', 'is_published')
     success_url = reverse_lazy('blog:list')
     template_name = 'blog/blog_form.html'
+
 
 class BlogUpdateView(UpdateView):
     model = Blog
@@ -36,6 +40,7 @@ class BlogUpdateView(UpdateView):
 
     def get_success_url(self):
         return reverse('blog:view', kwargs={'pk': self.object.pk})
+
 
 class BlogDeleteView(DeleteView):
     model = Blog

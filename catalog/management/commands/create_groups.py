@@ -3,6 +3,7 @@ from django.contrib.auth.models import Group, Permission
 from django.contrib.contenttypes.models import ContentType
 from catalog.models import Product
 
+
 class Command(BaseCommand):
     def handle(self, *args, **options):
         group, created = Group.objects.get_or_create(name='Product Moderator')

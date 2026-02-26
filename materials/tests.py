@@ -2,6 +2,7 @@ from django.test import TestCase
 from materials.models import Course, Lesson
 from users.models import User
 
+
 class MaterialsTestCase(TestCase):
     def setUp(self):
         self.user = User.objects.create(email="test@example.com")

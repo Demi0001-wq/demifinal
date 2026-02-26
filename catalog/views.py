@@ -8,6 +8,7 @@ from catalog.forms import ProductForm
 from catalog.services import get_products_by_category
 from config.settings import CACHE_ENABLED
 
+
 class ProductListView(ListView):
     model = Product
     template_name = 'catalog/home.html'
@@ -29,12 +30,14 @@ class ProductListView(ListView):
             queryset = queryset.filter(is_published=True)
         return queryset
 
+
 class CategoryProductListView(ListView):
     template_name = 'catalog/category_product_list.html'
     context_object_name = 'products'
 
     def get_queryset(self):
         return get_products_by_category(self.kwargs.get('pk'))
+
 
 class ProductDetailView(LoginRequiredMixin, DetailView):
     model = Product
@@ -50,6 +53,7 @@ class ProductDetailView(LoginRequiredMixin, DetailView):
                 cache.set(key, product)
             return product
         return super().get_object(queryset)
+
 
 class ProductCreateView(LoginRequiredMixin, CreateView):
     model = Product
@@ -68,6 +72,7 @@ class ProductCreateView(LoginRequiredMixin, CreateView):
         self.object.save()
         return super().form_valid(form)
 
+
 class ProductUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Product
     form_class = ProductForm
@@ -84,6 +89,7 @@ class ProductUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         obj = self.get_object()
         return user == obj.owner or user.groups.filter(name='Product Moderator').exists() or user.has_perm('catalog.can_unpublish_product')
 
+
 class ProductDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Product
     success_url = reverse_lazy('home')
@@ -93,6 +99,7 @@ class ProductDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         user = self.request.user
         obj = self.get_object()
         return user == obj.owner or user.groups.filter(name='Product Moderator').exists() or user.has_perm('catalog.delete_product')
+
 
 class ContactTemplateView(TemplateView):
     template_name = 'catalog/contacts.html'
