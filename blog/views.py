@@ -11,6 +11,7 @@ class BlogListView(ListView):
     def get_queryset(self):
         return Blog.objects.filter(is_published=True)
 
+
 class BlogDetailView(DetailView):
     model = Blog
     template_name = 'blog/blog_detail.html'
