@@ -3,7 +3,6 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from blog.models import Blog
 
 
-
 class BlogListView(ListView):
     model = Blog
     template_name = 'blog/blog_list.html'
@@ -11,7 +10,6 @@ class BlogListView(ListView):
 
     def get_queryset(self):
         return Blog.objects.filter(is_published=True)
-
 
 
 class BlogDetailView(DetailView):
