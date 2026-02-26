@@ -24,7 +24,7 @@ class ProductListView(ListView):
                     products = products.filter(is_published=True)
                 cache.set(key, list(products))
             return products
-        
+
         queryset = super().get_queryset()
         if not self.request.user.groups.filter(name='Product Moderator').exists() and not self.request.user.is_superuser:
             queryset = queryset.filter(is_published=True)

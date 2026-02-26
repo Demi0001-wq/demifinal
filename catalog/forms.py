@@ -5,9 +5,9 @@ from catalog.models import Product
 
 class ProductForm(forms.ModelForm):
     PROHIBITED_WORDS = [
-        'казино', 'криптовалюта', 'крипта', 'биржа', 
+        'казино', 'криптовалюта', 'крипта', 'биржа',
         'дешево', 'бесплатно', 'обман', 'полиция', 'радар',
-        'casino', 'cryptocurrency', 'crypt', 'stock exchange', 
+        'casino', 'cryptocurrency', 'crypt', 'stock exchange',
         'cheap', 'for free', 'deception', 'police', 'radar'
     ]
 
@@ -18,7 +18,7 @@ class ProductForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         user = kwargs.pop('user', None)
         super().__init__(*args, **kwargs)
-        
+
         # Hide is_published for regular users
         if user and not user.has_perm('catalog.can_unpublish_product'):
             if 'is_published' in self.fields:

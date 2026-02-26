@@ -8,9 +8,9 @@ class MaterialsTestCase(TestCase):
         self.user = User.objects.create(email="test@example.com")
         self.course = Course.objects.create(name="Test Course", description="Test Description", owner=self.user)
         self.lesson = Lesson.objects.create(
-            name="Test Lesson", 
-            description="Test Description", 
-            course=self.course, 
+            name="Test Lesson",
+            description="Test Description",
+            course=self.course,
             owner=self.user
         )
 
