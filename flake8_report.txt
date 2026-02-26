@@ -1,0 +1,270 @@
+.\35.2\config\settings.py:2:1: F401 'sys' imported but unused
+.\35.2\config\settings.py:84:1: E402 module level import not at top of file
+.\35.2\manage.py:5:1: E302 expected 2 blank lines, found 1
+.\35.2\manage.py:17:1: E305 expected 2 blank lines after class or function definition, found 1
+.\35.2\materials\apps.py:2:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\models.py:3:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\models.py:8:5: E704 multiple statements on one line (def)
+.\35.2\materials\models.py:9:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\models.py:16:5: E704 multiple statements on one line (def)
+.\35.2\materials\models.py:17:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\models.py:20:15: E701 multiple statements on one line (colon)
+.\35.2\materials\paginators.py:2:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\permissions.py:2:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\permissions.py:5:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\serializers.py:4:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\serializers.py:9:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\serializers.py:13:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\serializers.py:17:5: E301 expected 1 blank line, found 0
+.\35.2\materials\serializers.py:20:5: E301 expected 1 blank line, found 0
+.\35.2\materials\serializers.py:20:5: E704 multiple statements on one line (def)
+.\35.2\materials\serializers.py:21:5: E301 expected 1 blank line, found 0
+.\35.2\materials\tasks.py:5:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\tasks.py:12:121: E501 line too long (160 > 120 characters)
+.\35.2\materials\tasks.py:13:31: E701 multiple statements on one line (colon)
+.\35.2\materials\urls.py:3:1: F403 'from .views import *' used; unable to detect undefined names
+.\35.2\materials\urls.py:5:29: F405 'CourseViewSet' may be undefined, or defined from star imports: .views
+.\35.2\materials\urls.py:8:29: F405 'LessonCreateAPIView' may be undefined, or defined from star imports: .views
+.\35.2\materials\urls.py:9:22: F405 'LessonListAPIView' may be undefined, or defined from star imports: .views
+.\35.2\materials\urls.py:10:31: F405 'LessonRetrieveAPIView' may be undefined, or defined from star imports: .views
+.\35.2\materials\urls.py:11:37: F405 'LessonUpdateAPIView' may be undefined, or defined from star imports: .views
+.\35.2\materials\urls.py:12:37: F405 'LessonDestroyAPIView' may be undefined, or defined from star imports: .views
+.\35.2\materials\urls.py:13:31: F405 'SubscriptionAPIView' may be undefined, or defined from star imports: .views
+.\35.2\materials\validators.py:1:1: F401 're' imported but unused
+.\35.2\materials\validators.py:3:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\validators.py:4:5: E704 multiple statements on one line (def)
+.\35.2\materials\validators.py:5:5: E301 expected 1 blank line, found 0
+.\35.2\materials\views.py:6:1: F403 'from .serializers import *' used; unable to detect undefined names
+.\35.2\materials\views.py:10:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\views.py:12:24: F405 'CourseSerializer' may be undefined, or defined from star imports: .serializers
+.\35.2\materials\views.py:14:5: E704 multiple statements on one line (def)
+.\35.2\materials\views.py:15:5: E301 expected 1 blank line, found 0
+.\35.2\materials\views.py:18:5: E301 expected 1 blank line, found 0
+.\35.2\materials\views.py:19:35: E701 multiple statements on one line (colon)
+.\35.2\materials\views.py:20:77: E701 multiple statements on one line (colon)
+.\35.2\materials\views.py:20:121: E501 line too long (144 > 120 characters)
+.\35.2\materials\views.py:21:38: E701 multiple statements on one line (colon)
+.\35.2\materials\views.py:23:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\views.py:24:24: F405 'LessonSerializer' may be undefined, or defined from star imports: .serializers
+.\35.2\materials\views.py:26:5: E704 multiple statements on one line (def)
+.\35.2\materials\views.py:27:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\views.py:29:24: F405 'LessonSerializer' may be undefined, or defined from star imports: .serializers
+.\35.2\materials\views.py:32:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\views.py:34:24: F405 'LessonSerializer' may be undefined, or defined from star imports: .serializers
+.\35.2\materials\views.py:36:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\views.py:38:24: F405 'LessonSerializer' may be undefined, or defined from star imports: .serializers
+.\35.2\materials\views.py:40:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\views.py:42:24: F405 'LessonSerializer' may be undefined, or defined from star imports: .serializers
+.\35.2\materials\views.py:44:1: E302 expected 2 blank lines, found 0
+.\35.2\materials\views.py:46:5: E301 expected 1 blank line, found 0
+.\35.2\users\apps.py:2:1: E302 expected 2 blank lines, found 0
+.\35.2\users\models.py:4:1: E302 expected 2 blank lines, found 1
+.\35.2\users\models.py:6:21: E701 multiple statements on one line (colon)
+.\35.2\users\models.py:12:5: E301 expected 1 blank line, found 0
+.\35.2\users\models.py:17:1: E302 expected 2 blank lines, found 1
+.\35.2\users\models.py:27:1: E302 expected 2 blank lines, found 1
+.\35.2\users\serializers.py:4:1: E302 expected 2 blank lines, found 1
+.\35.2\users\serializers.py:9:1: E302 expected 2 blank lines, found 1
+.\35.2\users\serializers.py:11:5: E301 expected 1 blank line, found 0
+.\35.2\users\serializers.py:14:5: E301 expected 1 blank line, found 0
+.\35.2\users\serializers.py:17:1: E302 expected 2 blank lines, found 1
+.\35.2\users\services.py:4:1: E302 expected 2 blank lines, found 0
+.\35.2\users\services.py:6:1: E302 expected 2 blank lines, found 0
+.\35.2\users\services.py:8:1: E302 expected 2 blank lines, found 0
+.\35.2\users\services.py:9:121: E501 line too long (152 > 120 characters)
+.\35.2\users\services.py:11:1: E302 expected 2 blank lines, found 0
+.\35.2\users\tasks.py:5:1: E302 expected 2 blank lines, found 0
+.\35.2\users\urls.py:3:1: F403 'from .views import *' used; unable to detect undefined names
+.\35.2\users\urls.py:5:23: F405 'UserCreateAPIView' may be undefined, or defined from star imports: .views
+.\35.2\users\urls.py:8:14: F405 'UserListAPIView' may be undefined, or defined from star imports: .views
+.\35.2\users\urls.py:9:23: F405 'UserRetrieveAPIView' may be undefined, or defined from star imports: .views
+.\35.2\users\urls.py:10:30: F405 'UserUpdateAPIView' may be undefined, or defined from star imports: .views
+.\35.2\users\urls.py:11:30: F405 'UserDestroyAPIView' may be undefined, or defined from star imports: .views
+.\35.2\users\urls.py:12:23: F405 'PaymentListAPIView' may be undefined, or defined from star imports: .views
+.\35.2\users\urls.py:13:30: F405 'PaymentCreateAPIView' may be undefined, or defined from star imports: .views
+.\35.2\users\urls.py:14:39: F405 'PaymentStatusAPIView' may be undefined, or defined from star imports: .views
+.\35.2\users\views.py:4:1: F403 'from .serializers import *' used; unable to detect undefined names
+.\35.2\users\views.py:5:1: F403 'from .services import *' used; unable to detect undefined names
+.\35.2\users\views.py:6:1: E302 expected 2 blank lines, found 0
+.\35.2\users\views.py:7:24: F405 'UserRegisterSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\35.2\users\views.py:9:1: E302 expected 2 blank lines, found 0
+.\35.2\users\views.py:11:24: F405 'UserSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\35.2\users\views.py:12:1: E302 expected 2 blank lines, found 0
+.\35.2\users\views.py:14:24: F405 'UserSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\35.2\users\views.py:15:1: E302 expected 2 blank lines, found 0
+.\35.2\users\views.py:17:24: F405 'UserSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\35.2\users\views.py:18:1: E302 expected 2 blank lines, found 0
+.\35.2\users\views.py:20:24: F405 'UserSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\35.2\users\views.py:21:1: E302 expected 2 blank lines, found 0
+.\35.2\users\views.py:23:24: F405 'PaymentSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\35.2\users\views.py:24:1: E302 expected 2 blank lines, found 0
+.\35.2\users\views.py:25:24: F405 'PaymentSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\35.2\users\views.py:26:5: E301 expected 1 blank line, found 0
+.\35.2\users\views.py:28:121: E501 line too long (146 > 120 characters)
+.\35.2\users\views.py:29:22: F405 'create_stripe_product' may be undefined, or defined from star imports: .serializers, .services
+.\35.2\users\views.py:30:20: F405 'create_stripe_price' may be undefined, or defined from star imports: .serializers, .services
+.\35.2\users\views.py:31:36: F405 'create_stripe_session' may be undefined, or defined from star imports: .serializers, .services
+.\35.2\users\views.py:34:1: E302 expected 2 blank lines, found 0
+.\35.2\users\views.py:36:24: F405 'PaymentSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\35.2\users\views.py:37:5: E301 expected 1 blank line, found 0
+.\35.2\users\views.py:40:30: F405 'retrieve_stripe_session' may be undefined, or defined from star imports: .serializers, .services
+.\blog\apps.py:3:1: E302 expected 2 blank lines, found 1
+.\blog\models.py:3:1: E302 expected 2 blank lines, found 1
+.\blog\views.py:5:1: E302 expected 2 blank lines, found 1
+.\blog\views.py:13:1: E302 expected 2 blank lines, found 1
+.\blog\views.py:24:1: E302 expected 2 blank lines, found 1
+.\blog\views.py:30:1: E302 expected 2 blank lines, found 1
+.\blog\views.py:38:1: E302 expected 2 blank lines, found 1
+.\catalog\admin.py:4:1: E302 expected 2 blank lines, found 1
+.\catalog\admin.py:8:1: E302 expected 2 blank lines, found 1
+.\catalog\admin.py:14:1: E302 expected 2 blank lines, found 1
+.\catalog\forms.py:5:1: E302 expected 2 blank lines, found 1
+.\catalog\forms.py:7:53: W291 trailing whitespace
+.\catalog\forms.py:9:63: W291 trailing whitespace
+.\catalog\forms.py:20:1: W293 blank line contains whitespace
+.\catalog\management\commands\create_groups.py:6:1: E302 expected 2 blank lines, found 1
+.\catalog\management\commands\create_groups.py:9:1: W293 blank line contains whitespace
+.\catalog\management\commands\create_groups.py:11:1: W293 blank line contains whitespace
+.\catalog\management\commands\create_groups.py:17:1: W293 blank line contains whitespace
+.\catalog\management\commands\create_groups.py:21:1: W293 blank line contains whitespace
+.\catalog\management\commands\create_groups.py:22:121: E501 line too long (135 > 120 characters)
+.\catalog\management\commands\fill.py:5:1: E302 expected 2 blank lines, found 1
+.\catalog\models.py:4:1: E302 expected 2 blank lines, found 1
+.\catalog\models.py:24:1: W293 blank line contains whitespace
+.\catalog\models.py:25:121: E501 line too long (130 > 120 characters)
+.\catalog\services.py:5:1: E302 expected 2 blank lines, found 1
+.\catalog\services.py:12:1: W293 blank line contains whitespace
+.\catalog\services.py:15:1: W293 blank line contains whitespace
+.\catalog\services.py:19:1: W293 blank line contains whitespace
+.\catalog\tests.py:1:1: F401 'django.test.TestCase' imported but unused
+.\catalog\urls.py:2:84: W291 trailing whitespace
+.\catalog\views.py:4:1: F401 'django.core.exceptions.PermissionDenied' imported but unused
+.\catalog\views.py:11:1: E302 expected 2 blank lines, found 1
+.\catalog\views.py:22:121: E501 line too long (129 > 120 characters)
+.\catalog\views.py:26:1: W293 blank line contains whitespace
+.\catalog\views.py:28:121: E501 line too long (121 > 120 characters)
+.\catalog\views.py:32:1: E302 expected 2 blank lines, found 1
+.\catalog\views.py:39:1: E302 expected 2 blank lines, found 1
+.\catalog\views.py:54:1: E302 expected 2 blank lines, found 1
+.\catalog\views.py:71:1: E302 expected 2 blank lines, found 1
+.\catalog\views.py:85:121: E501 line too long (139 > 120 characters)
+.\catalog\views.py:87:1: E302 expected 2 blank lines, found 1
+.\catalog\views.py:95:121: E501 line too long (132 > 120 characters)
+.\catalog\views.py:97:1: E302 expected 2 blank lines, found 1
+.\config\settings.py:2:1: F401 'sys' imported but unused
+.\config\settings.py:84:1: E402 module level import not at top of file
+.\manage.py:5:1: E302 expected 2 blank lines, found 1
+.\manage.py:17:1: E305 expected 2 blank lines after class or function definition, found 1
+.\materials\apps.py:2:1: E302 expected 2 blank lines, found 0
+.\materials\models.py:3:1: E302 expected 2 blank lines, found 0
+.\materials\models.py:8:5: E704 multiple statements on one line (def)
+.\materials\models.py:9:1: E302 expected 2 blank lines, found 0
+.\materials\models.py:16:5: E704 multiple statements on one line (def)
+.\materials\models.py:17:1: E302 expected 2 blank lines, found 0
+.\materials\models.py:20:15: E701 multiple statements on one line (colon)
+.\materials\paginators.py:2:1: E302 expected 2 blank lines, found 0
+.\materials\permissions.py:2:1: E302 expected 2 blank lines, found 0
+.\materials\permissions.py:5:1: E302 expected 2 blank lines, found 0
+.\materials\serializers.py:4:1: E302 expected 2 blank lines, found 0
+.\materials\serializers.py:9:1: E302 expected 2 blank lines, found 0
+.\materials\serializers.py:13:1: E302 expected 2 blank lines, found 0
+.\materials\serializers.py:17:5: E301 expected 1 blank line, found 0
+.\materials\serializers.py:20:5: E301 expected 1 blank line, found 0
+.\materials\serializers.py:20:5: E704 multiple statements on one line (def)
+.\materials\serializers.py:21:5: E301 expected 1 blank line, found 0
+.\materials\tasks.py:5:1: E302 expected 2 blank lines, found 0
+.\materials\tasks.py:12:121: E501 line too long (160 > 120 characters)
+.\materials\tasks.py:13:31: E701 multiple statements on one line (colon)
+.\materials\tests.py:5:1: E302 expected 2 blank lines, found 1
+.\materials\tests.py:10:32: W291 trailing whitespace
+.\materials\tests.py:11:44: W291 trailing whitespace
+.\materials\tests.py:12:32: W291 trailing whitespace
+.\materials\urls.py:3:1: F403 'from .views import *' used; unable to detect undefined names
+.\materials\urls.py:5:29: F405 'CourseViewSet' may be undefined, or defined from star imports: .views
+.\materials\urls.py:8:29: F405 'LessonCreateAPIView' may be undefined, or defined from star imports: .views
+.\materials\urls.py:9:22: F405 'LessonListAPIView' may be undefined, or defined from star imports: .views
+.\materials\urls.py:10:31: F405 'LessonRetrieveAPIView' may be undefined, or defined from star imports: .views
+.\materials\urls.py:11:37: F405 'LessonUpdateAPIView' may be undefined, or defined from star imports: .views
+.\materials\urls.py:12:37: F405 'LessonDestroyAPIView' may be undefined, or defined from star imports: .views
+.\materials\urls.py:13:31: F405 'SubscriptionAPIView' may be undefined, or defined from star imports: .views
+.\materials\validators.py:1:1: F401 're' imported but unused
+.\materials\validators.py:3:1: E302 expected 2 blank lines, found 0
+.\materials\validators.py:4:5: E704 multiple statements on one line (def)
+.\materials\validators.py:5:5: E301 expected 1 blank line, found 0
+.\materials\views.py:6:1: F403 'from .serializers import *' used; unable to detect undefined names
+.\materials\views.py:10:1: E302 expected 2 blank lines, found 0
+.\materials\views.py:12:24: F405 'CourseSerializer' may be undefined, or defined from star imports: .serializers
+.\materials\views.py:14:5: E704 multiple statements on one line (def)
+.\materials\views.py:15:5: E301 expected 1 blank line, found 0
+.\materials\views.py:18:5: E301 expected 1 blank line, found 0
+.\materials\views.py:19:35: E701 multiple statements on one line (colon)
+.\materials\views.py:20:77: E701 multiple statements on one line (colon)
+.\materials\views.py:20:121: E501 line too long (144 > 120 characters)
+.\materials\views.py:21:38: E701 multiple statements on one line (colon)
+.\materials\views.py:23:1: E302 expected 2 blank lines, found 0
+.\materials\views.py:24:24: F405 'LessonSerializer' may be undefined, or defined from star imports: .serializers
+.\materials\views.py:26:5: E704 multiple statements on one line (def)
+.\materials\views.py:27:1: E302 expected 2 blank lines, found 0
+.\materials\views.py:29:24: F405 'LessonSerializer' may be undefined, or defined from star imports: .serializers
+.\materials\views.py:32:1: E302 expected 2 blank lines, found 0
+.\materials\views.py:34:24: F405 'LessonSerializer' may be undefined, or defined from star imports: .serializers
+.\materials\views.py:36:1: E302 expected 2 blank lines, found 0
+.\materials\views.py:38:24: F405 'LessonSerializer' may be undefined, or defined from star imports: .serializers
+.\materials\views.py:40:1: E302 expected 2 blank lines, found 0
+.\materials\views.py:42:24: F405 'LessonSerializer' may be undefined, or defined from star imports: .serializers
+.\materials\views.py:44:1: E302 expected 2 blank lines, found 0
+.\materials\views.py:46:5: E301 expected 1 blank line, found 0
+.\users\apps.py:2:1: E302 expected 2 blank lines, found 0
+.\users\forms.py:4:1: E302 expected 2 blank lines, found 1
+.\users\forms.py:9:1: E302 expected 2 blank lines, found 1
+.\users\models.py:4:1: E302 expected 2 blank lines, found 1
+.\users\models.py:6:21: E701 multiple statements on one line (colon)
+.\users\models.py:12:5: E301 expected 1 blank line, found 0
+.\users\models.py:17:1: E302 expected 2 blank lines, found 1
+.\users\models.py:27:1: E302 expected 2 blank lines, found 1
+.\users\serializers.py:4:1: E302 expected 2 blank lines, found 1
+.\users\serializers.py:9:1: E302 expected 2 blank lines, found 1
+.\users\serializers.py:11:5: E301 expected 1 blank line, found 0
+.\users\serializers.py:14:5: E301 expected 1 blank line, found 0
+.\users\serializers.py:17:1: E302 expected 2 blank lines, found 1
+.\users\services.py:4:1: E302 expected 2 blank lines, found 0
+.\users\services.py:6:1: E302 expected 2 blank lines, found 0
+.\users\services.py:8:1: E302 expected 2 blank lines, found 0
+.\users\services.py:9:121: E501 line too long (152 > 120 characters)
+.\users\services.py:11:1: E302 expected 2 blank lines, found 0
+.\users\tasks.py:5:1: E302 expected 2 blank lines, found 0
+.\users\tests.py:4:1: E302 expected 2 blank lines, found 1
+.\users\urls.py:3:1: F403 'from .views import *' used; unable to detect undefined names
+.\users\urls.py:5:23: F405 'UserCreateAPIView' may be undefined, or defined from star imports: .views
+.\users\urls.py:8:14: F405 'UserListAPIView' may be undefined, or defined from star imports: .views
+.\users\urls.py:9:23: F405 'UserRetrieveAPIView' may be undefined, or defined from star imports: .views
+.\users\urls.py:10:30: F405 'UserUpdateAPIView' may be undefined, or defined from star imports: .views
+.\users\urls.py:11:30: F405 'UserDestroyAPIView' may be undefined, or defined from star imports: .views
+.\users\urls.py:12:23: F405 'PaymentListAPIView' may be undefined, or defined from star imports: .views
+.\users\urls.py:13:30: F405 'PaymentCreateAPIView' may be undefined, or defined from star imports: .views
+.\users\urls.py:14:39: F405 'PaymentStatusAPIView' may be undefined, or defined from star imports: .views
+.\users\views.py:4:1: F403 'from .serializers import *' used; unable to detect undefined names
+.\users\views.py:5:1: F403 'from .services import *' used; unable to detect undefined names
+.\users\views.py:6:1: E302 expected 2 blank lines, found 0
+.\users\views.py:7:24: F405 'UserRegisterSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\users\views.py:9:1: E302 expected 2 blank lines, found 0
+.\users\views.py:11:24: F405 'UserSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\users\views.py:12:1: E302 expected 2 blank lines, found 0
+.\users\views.py:14:24: F405 'UserSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\users\views.py:15:1: E302 expected 2 blank lines, found 0
+.\users\views.py:17:24: F405 'UserSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\users\views.py:18:1: E302 expected 2 blank lines, found 0
+.\users\views.py:20:24: F405 'UserSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\users\views.py:21:1: E302 expected 2 blank lines, found 0
+.\users\views.py:23:24: F405 'PaymentSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\users\views.py:24:1: E302 expected 2 blank lines, found 0
+.\users\views.py:25:24: F405 'PaymentSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\users\views.py:26:5: E301 expected 1 blank line, found 0
+.\users\views.py:28:121: E501 line too long (146 > 120 characters)
+.\users\views.py:29:22: F405 'create_stripe_product' may be undefined, or defined from star imports: .serializers, .services
+.\users\views.py:30:20: F405 'create_stripe_price' may be undefined, or defined from star imports: .serializers, .services
+.\users\views.py:31:36: F405 'create_stripe_session' may be undefined, or defined from star imports: .serializers, .services
+.\users\views.py:34:1: E302 expected 2 blank lines, found 0
+.\users\views.py:36:24: F405 'PaymentSerializer' may be undefined, or defined from star imports: .serializers, .services
+.\users\views.py:37:5: E301 expected 1 blank line, found 0
+.\users\views.py:40:30: F405 'retrieve_stripe_session' may be undefined, or defined from star imports: .serializers, .services
